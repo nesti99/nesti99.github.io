@@ -1,11 +1,208 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Il mio sito</title>
+  <title>Andrea Nesticò – Unix/Linux System Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio interattivo di Andrea Nesticò, Sistemista Unix/Linux e IT Specialist.">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>Ciao! Questo è il mio sito con GitHub Pages</h1>
-  <p>Funziona!</p>
+
+  <div class="bg-noise"></div>
+
+  <main class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div>
+        <div class="logo">
+          <span class="prompt">$</span> andrea@unix
+        </div>
+
+        <nav class="menu">
+          <button data-target="intro">&gt; help</button>
+          <button data-target="whoami">&gt; whoami</button>
+          <button data-target="skills">&gt; skills</button>
+          <button data-target="stack">&gt; stack</button>
+          <button data-target="experience">&gt; experience</button>
+          <button data-target="contact">&gt; contact</button>
+        </nav>
+      </div>
+
+      <div class="status">
+        <div>host: <span>Roma, IT</span></div>
+        <div>role: <span>Sistemista Unix/Linux</span></div>
+        <div>shell: <span>bash</span></div>
+      </div>
+    </aside>
+
+    <!-- TERMINAL -->
+    <section class="terminal">
+
+      <header class="terminal-bar">
+        <div class="btns">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <div class="title">andrea@unix: ~</div>
+      </header>
+
+      <div class="terminal-body">
+
+        <!-- INTRO -->
+        <section id="intro" class="panel active">
+          <pre id="typing-area" class="typing"></pre>
+        </section>
+
+        <!-- WHOAMI -->
+        <section id="whoami" class="panel">
+<pre>
+andrea@unix:~$ whoami
+
+Nome:        Andrea Nesticò
+Ruolo:       Sistemista Unix/Linux – IT Specialist
+Location:    Roma, Italia
+
+Responsabile IT con esperienza nella gestione di infrastrutture,
+sistemi e reti in contesti enterprise. Mi occupo di server, virtualizzazione, sicurezza, 
+automazione e supporto avanzato, garantendo stabilità e continuità operativa.
+Collaboro con il reparto tecnico e R&D per introdurre nuove soluzioni e migliorare l’ecosistema IT aziendale.
+Sono aperto a opportunità che mi permettano di crescere e lavorare con tecnologie sempre più avanzate.
+</pre>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="panel">
+<pre>
+andrea@unix:~$ cat skills.txt
+
+[ Sistemi Operativi ]
+  - Linux (Debian, RedHat)
+  - Windows Server
+
+[ Networking ]
+  - Routing statico
+  - VLAN, trunk
+  - Traffico broadcast
+  - Traffico multicast
+  - Ipsec
+  - Vpn
+
+[ Sicurezza ]
+  - pfSense
+  - iptables
+  - firewalld
+
+[ Virtualizzazione & Container ]
+  - Proxmox VE (QEMU/KVM, LXC), HA & backup
+  - VMware ESXi / vSphere
+  - Docker: container, immagini, docker-compose
+  - Gestione storage: ZFS, Ceph, NFS, Samba
+
+[ Server & Servizi ]
+  - Web server: Apache2, Nginx, Flask
+  - Database: MySQL/MariaDB
+  - DNS: Bind9
+  - LDAP, Samba/Active Directory
+  - Postfix/Dovecot (mail server), SPF/DKIM/DMARC
+  - Reverse proxy, haproxy
+  - File server, SFTP, Rsyslog, backup server
+  - Monitoring: Zabbix, Grafana
+  - Log management: Graylog
+
+[ Scripting ]
+  - Bash
+
+[ Lingue ]
+  - Italiano: Madrelingua
+  - Inglese: Base
+  - Francese: Base
+</pre>
+        </section>
+
+        <!-- STACK -->
+        <section id="stack" class="panel">
+<pre>
+andrea@unix:~$ ./daily_stack.sh
+
+Attività quotidiane:
+
+  - Manutenzione e aggiornamento server
+  - Supporto IT avanzato (2° e 3° livello)
+  - Configurazione servizi (Apache, MySQL, LDAP, OpenVPN...)
+  - Gestione infrastrutture virtualizzate (Proxmox, VMware)
+  - Gestione container Docker
+  - Configurazione firewall (pfSense, iptables)
+  - Networking: VLAN, trunk, routing
+  - Supporto al reparto ricerca & sviluppo
+  - Redazione documenti tecnici
+
+Focus:
+  Stabilità, performance, sicurezza, automazione.
+</pre>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience" class="panel">
+<pre>
+andrea@unix:~$ tail -n +1 experience.log
+
+[ INFORMA SISTEMI S.p.A ]
+Ruolo:    IT Specialist
+Periodo:  05/2022 – Attuale
+Luogo:    Roma
+
+  - Manutenzione e aggiornamento server interni
+  - Soluzioni IT per aziende
+  - Helpdesk 2° e 3° livello
+  - Installazione & configurazione:
+      apache2, bind9, mysql,
+      ldap, openvpn, xserver, jboss,
+      mail server, domini
+  - Virtualizzazione:
+      Proxmox (VM + LXC), VMware ESXi, VirtualBox, Docker
+  - Firewall:
+      pfSense, iptables, firewalld
+  - Networking:
+      VLAN, trunk, rotte statiche
+  - Documenti tecnici di gara
+
+
+[ Ristorante Da Valerio – Grottaferrata ]
+Ruolo:    Aiuto Cuoco
+Periodo:  09/2018 – 05/2022
+</pre>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="panel">
+<pre>
+andrea@unix:~$ ssh contact@andrea-nestico.it
+
+Contatti:
+
+  Email:     n99.andrea@gmail.com
+  LinkedIn:  https://www.linkedin.com/in/andrea-nesticò-268594230
+
+</pre>
+        </section>
+
+        <!-- SHELL LIVE -->
+        <div class="shell-live">
+          <span class="prompt">andrea@unix:~$</span>
+          <input id="shell-input" type="text" autocomplete="off" autofocus placeholder="digita un comando...">
+        </div>
+
+        <div id="shell-output" class="shell-output"></div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
