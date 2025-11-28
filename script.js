@@ -8,7 +8,7 @@ const introLines = [
   "andrea@unix:~$ ./cv.sh",
   "",
   "Benvenuto nel mio cv",
-  "io, sono Andrea Nesticò.",
+  "Io, sono Andrea Nesticò.",
   "",
   "Ruolo:       Sistemista Unix/Linux – IT Specialist",
   "Location:    Roma, Italia",
@@ -223,3 +223,4 @@ if (shellInput) {
     }
   });
 }
+
